@@ -16,17 +16,18 @@ class Heapsort{
         }
     }
     public static void main(String [] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++) arr[i]=sc.nextInt();
-        buildheap(arr,n);
-        for(int i=n-1;i>0;i--){
-            int temp=arr[0];
-            arr[0]=arr[i];
-            arr[i]=temp;
-            maxheapify(arr,i,0);
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            int arr[] = new int[n];
+            for(int i=0;i<n;i++) arr[i]=sc.nextInt();
+            buildheap(arr,n);
+            for(int i=n-1;i>0;i--){
+                int temp=arr[0];
+                arr[0]=arr[i];
+                arr[i]=temp;
+                maxheapify(arr,i,0);
+            }
+            System.out.print(Arrays.toString(arr));
         }
-        System.out.print(Arrays.toString(arr));
     }
 }
