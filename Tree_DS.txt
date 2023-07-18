@@ -1,0 +1,58 @@
+Node at a distance
+Q)Given a Binary Tree and a positive integer k. The task is 
+  to count all distinct nodes that are distance k from a 
+  leaf node
+Sol:  Maintain a hashmap of height and node value
+      return nodes of height k
+
+Left View Of Binary Tree
+Sol: Maintain level and maxlevel starting with root level 1,
+     print first node on that level.
+
+Children sum property, Mirror Tree
+
+Balanaced Tree 
+if(root==null) return 0;
+int lh = dfs(root.left);
+if(lh==-1) return -1;
+int rh = dfs(root.right);
+if(rh==-1) return -1;
+if(Math.abs(lh-rh)>1) return -1;
+return Math.max(lh,rh)+1;
+
+
+Diameter of a binary tree:
+int height_tree(Node root){
+        if(root==null) return 0;
+        int lh=height_tree(root.left);
+        int rh=height_tree(root.right);
+        int height=Math.max(lh,rh)+1;
+        return height;
+    }
+int diameter(Node root) {
+        // Your code here
+        if(root==null) return 0;
+        int lh=diameter(root.left);
+        int rh=diameter(root.right);
+        int height = height_tree(root.left)+1+height_tree(root.right);
+        int diam = Math.max(height,Math.max(lh,rh));
+        return diam;
+}
+
+
+
+Lowest Common Ancestor
+if(root==null) return null;
+		if(root.data==n1||root.data==n2)
+		  return root;
+		Node lca1 = lca(root.left,n1,n2);
+		Node lca2= lca(root.right,n1,n2);
+		if(lca1!=null && lca2!=null) return root;
+		if(lca1!=null) 
+		   return lca1;
+		else
+		   return lca2;
+
+	 
+	  
+

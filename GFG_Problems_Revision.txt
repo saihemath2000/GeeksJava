@@ -1,0 +1,75 @@
+NOTE:
+*. (x &~(x-1)) ---> It finds a no which has only one bit set and bit corresponds to last set bit of x
+*. (1<<n) --->2^n, (n>>1)--->n/2
+*. Swap two numbers using xor  
+   a^=b
+   b^=a 
+   a^=b
+  
+
+JAVA REVISION:-
+
+a) MATHEMATICS
+
+Trailing zeros in factorial
+GCD
+Prime
+Prime Factors
+Prime numbers upto n (Sieve of Eratosthenes)
+Computing power(x^n)
+
+b) BIT LOGIC
+Check if kth bit is set (1<<(k-1))
+Count set bits of n    (while n>0: n=n&(n-1),res+=1)
+Power of 2 (n&(n-1)==0---> true)
+One odd occuring (res=res ^ arr[i])--> xor
+Power set of a string("abc"....)
+
+c) RECURSION
+Palindrome recursive (return (str.charAt(start)==str.charAt(end))&& palindrome(str,start+1,end-1));
+All subsets of a string/powerset
+Josephus problem (jos(n-1,k)+k)%n
+Count subsets for given sum (sum=25,[10,15,20])
+Permutations of a string (maintain index of fixed position , along with a loop,swap)
+
+d) ARRAYS
+Finding second largest element (keep track of largest element )
+Remove duplicates from an unsorted array in O(1) space
+Left rotate an array by d places (recursion, reverse first d places, next d to n places and reverse total array)
+Trapping water (finding lmax, rmax and finding min between corresponding values-arr[i])
+Maxsumsubarray (finding max sum)
+Maxcircular subarray sum
+Sliding window technique
+Find subarray with given sum
+
+e) SEARCHING
+Index of first occurence
+Index of last occcurence
+Count occurences of an element (lasto-firsto+1)
+Count 1's in a sorted binary tree
+Square root
+Search in a sorted rotated array
+Find a peak element(Both adjacent elements are smaller)
+Triplet sum (sorted array)
+Median of two sorted arrays
+Repeating element (slow,fast approach)
+Allocate min no pages (ans in [Maxelement,Sum], binary search)
+
+
+d) SORTING
+Sorting non primitive types (cmp fucntion implements Comparator<Point>, Point)
+Bubble sort
+Insertion sort
+Selection sort
+Merge sort
+Intersection of two sorted arrays
+Union of two sorted arrays
+lomuto partition
+hoarse partition
+kthsmallest element(using lomuto partition)
+dutch national flag problem (seggregate 0's 1's and 2's)
+Merge overlapping intervals
+Cycle sort
+Heap sort
+Count sort
+Radix sort
