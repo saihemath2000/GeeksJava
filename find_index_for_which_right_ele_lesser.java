@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 class find_index_for_which_right_ele_lesser{
     public static void result(int arr[]){
         int curr_ldr=arr[arr.length-1];
