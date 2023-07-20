@@ -5,7 +5,7 @@ NOTE:
    a^=b
    b^=a 
    a^=b
-  
+ * Strings ->substring,equals,indexOf,toString,StringBuilder 
 
 JAVA REVISION:-
 
@@ -84,7 +84,7 @@ Search in a row wise and col wise sorted (start from top right)
 Median of a row wise sorted matrix (odd sized matrix, distinct ele)
 
 
-f)Hashing
+f) Hashing
 Intersection and union of two unsorted arrays using hashset
 Find a pair in an unsorted array for given sum using hashset
 Finding whether subarray with given sum is present?
@@ -92,4 +92,11 @@ Longest subarray size with given sum
 Longest subarray size with equal no of 0's and 1's (replace 0's with -1's and call above function)
 Longest common span with same sum for binary array
 Longest consecutive subsequence array
+Count distinct elements in every window of an array
+
+g) Strings
+Leftmost repeating character
+Leftmost non-repeating character
+Reverse words in a string
+
 
