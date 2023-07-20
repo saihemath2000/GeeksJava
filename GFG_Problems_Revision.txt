@@ -73,3 +73,20 @@ Cycle sort
 Heap sort
 Count sort
 Radix sort
+**Bucket sort
+
+
+e) Matrix
+Transpose of a matrix
+Rotate an array by 90 (transpose+condition)
+Spiral traversal of a matrix
+Search in a row wise and col wise sorted (start from top right)
+Median of a row wise sorted matrix (odd sized matrix, distinct ele)
+
+
+f)Hashing
+Intersection and union of two unsorted arrays using hashset
+Find a pair in an unsorted array for given sum using hashset
+Finding whether subarray with given sum is present?
+
+

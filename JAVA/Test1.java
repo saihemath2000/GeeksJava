@@ -1,18 +1,18 @@
 //program1
 
-public class Main {
-public static void main (String[] args) {
-int N = 2147483647;
-int M = 100000;
-for(int i =0; i< N; i++) {
-int[] box = new int[M];
-}
-}
-}
+// public class Main {
+// public static void main (String[] args) {
+// int N = 2147483647;
+// int M = 100000;
+// for(int i =0; i< N; i++) {
+// int[] box = new int[M];
+// }
+// }
+// }
 //result:Took so long
 
 //program2
-public class Main {
+public class Test1 {
 public static void main (String [] args){
 int N = 2147483647;
 int M = 100000;
