@@ -88,5 +88,8 @@ f)Hashing
 Intersection and union of two unsorted arrays using hashset
 Find a pair in an unsorted array for given sum using hashset
 Finding whether subarray with given sum is present?
-
+Longest subarray size with given sum
+Longest subarray size with equal no of 0's and 1's (replace 0's with -1's and call above function)
+Longest common span with same sum for binary array
+Longest consecutive subsequence array
 
