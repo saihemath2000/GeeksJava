@@ -98,5 +98,29 @@ g) Strings
 Leftmost repeating character
 Leftmost non-repeating character
 Reverse words in a string
+Naive algorithm and KMP for pattern searching
+Anagram Search
+Lexicographic rank of a string
+
+
+h) LinkedLists
+Insert,Delete and Search  singly linked list
+Insert,Delete and Seach doubly linked list
+insert, delete circular linked list
+Recursive reverse a single linked list
+Reverse a single linked list
+Reversing a doubly linked list
+Recursive search for element in single linkedlist
+Insert at begin circular doubly linkedlist
+Sorted insert in a linked list
+Middle of a linked list (slow fast approach)
+Nth node from end of a linkedlist (move one pointer upto node n and start another pointer from start, this pointer simultaneously)
+Remove duplicates from sorted linked lists
+Reverse a linked list in groups of k
+Detect loop
+Detect loop and remove loop 
+
+
+
 
 
