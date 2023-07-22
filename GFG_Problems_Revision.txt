@@ -157,6 +157,20 @@ Height of a binary tree
 Print nodes at distance k
 Level order traversal
 Level order traversal line by line
+Size of a binary tree
+Maximum in binary trees
+Print left view of binary tree
+Children sum property
+Check for balanced binary tree
+Find width of a binary tree
+Construct binary tree with inorder and preorder
+Tree traversal in spiral form
+Diameter of a binary tree (Longest distance between leaf nodes)
+Lowest Common Ancestor
+Maximum distance from given leaf to any of the nodes
+
+
+
 
 
 
