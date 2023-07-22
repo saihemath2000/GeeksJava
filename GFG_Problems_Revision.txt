@@ -117,8 +117,48 @@ Middle of a linked list (slow fast approach)
 Nth node from end of a linkedlist (move one pointer upto node n and start another pointer from start, this pointer simultaneously)
 Remove duplicates from sorted linked lists
 Reverse a linked list in groups of k
-Detect loop
+Detect loop/
 Detect loop and remove loop 
+Seggregate even and odd nodes
+Intersection point of two linked lists
+Pair wise swap of linked lists
+LRU cache design
+Merge two sorted linked lists
+Palindrome linked list (slow and fast approach to find mid ele, reverse mid to last index and check first half ll and reversed ll)
+
+
+I) Stacks
+Stacks using arrays
+Stacks using dynamic arrays (ArrayList)
+Stacks using Linkedlists 
+Stack using ArrayDeque
+Balanced Parenthesis
+Implement two stacks in an array
+Stock span problem
+Previous greater element
+Next greater element
+Find min in O(1) time
+infix to postfix
+Evaluate postfix to a number
+
+
+J) Queues
+Array implementation
+Linkedlist implementation
+ArrayDeque
+Implement stack using queues
+Recursive
+ArrayDeque
+Maximums of all subarrays of size k
+
+K) Trees
+Inorder,Preorder,Postorder
+Height of a binary tree 
+Print nodes at distance k
+Level order traversal
+Level order traversal line by line
+
+
 
 
 
