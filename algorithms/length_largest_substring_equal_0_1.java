@@ -9,10 +9,10 @@ class length_largest_substring_equal_0_1{
        for(int i=0;i<s.length();i++){
          if(s.charAt(i)=='1') c++;
          else c--;
-         if(T[c]<0) T[c]=i;
-         else{
-           max = Math.max(max,i-T[c]);
-         }
+         if(T[c]<0 && c==s.length()) T[c]=-1;
+         else T[c]=i;
+         max = Math.max(max,i-T[c]);
+         
        }
        System.out.print("Length of the largest substring with equal 0's and 1's "+max); 
     }

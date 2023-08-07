@@ -1,11 +1,11 @@
 import java.util.*;
-class smallest_j{
-    private static int binarysearch(int arr[],ArrayList<Integer> s,int low,int high,int key){
+class smallest_j_1{
+    private static int binarysearch(int arr[], int S[],int low,int high,int key){
         int ans=-1;
         while(low<=high){
            int mid=(low+high)/2;
-           if(arr[s.get(mid)]==key) return mid;
-           else if(arr[s.get(mid)]<key){
+           if(arr[S[mid]]==key) return -1;
+           else if(arr[S[mid]]<key){
             //   System.out.print(arr[s.get(mid)]+"-"+mid);
               ans= mid;
            }
@@ -18,17 +18,19 @@ class smallest_j{
         int n = sc.nextInt();
         int arr[] = new int[n];
         int b[] = new int[n];
-        ArrayList<Integer> s = new ArrayList<>();
+        int S[] = new int[n];
+        int top=0;
+        // ArrayList<Integer> s = new ArrayList<>();
         for(int i=0;i<n;i++) arr[i]=sc.nextInt();
         int i=0;
         while(i<n){
-            if(s.isEmpty()) b[i]=-1;
+            if(top==0) b[i]=-1;
             else{
-                int k =binarysearch(arr,s,0,s.size()-1,arr[i]);
+                int k =binarysearch(arr,S,0,top-1,arr[i]);
                 if(k==-1) b[i]=-1;
-                else b[i]=s.get(k);
+                else b[i]=S[k];
             }
-            if(s.isEmpty()|| arr[i]<arr[s.get(s.size()-1)]) s.add(i++);
+            if(top==0|| arr[i]<arr[S[top-1]]) S[top++]=i++;
             else i++;
             // System.out.print(s);
         }
