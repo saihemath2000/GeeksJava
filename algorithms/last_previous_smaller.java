@@ -8,8 +8,11 @@ class last_previous_smaller{
            else if(arr[S[mid]]<key){
             //   System.out.print(arr[s.get(mid)]+"-"+mid);
               ans= mid;
+              high=mid-1;
            }
-           high=mid-1;
+           else{
+            low=mid+1;
+           }
         }
         return ans;
     } 
@@ -27,6 +30,7 @@ class last_previous_smaller{
             if(top==0) b[i]=-1;
             else{
                 int k =binarysearch(arr,S,0,top-1,arr[i]);
+                System.out.print(Arrays.toString(S));
                 if(k==-1) b[i]=-1;
                 else b[i]=S[k];
             }

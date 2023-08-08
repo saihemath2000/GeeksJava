@@ -8,8 +8,11 @@ class last_next_greater{
            else if(arr[S[mid]]>key){
             //   System.out.print(arr[s.get(mid)]+"-"+mid);
               ans= mid;
+              low=mid+1;
            }
-           low=mid+1;
+           else{
+            high=mid-1;
+           }
         }
         return ans;
     } 
