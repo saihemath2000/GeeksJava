@@ -3,14 +3,14 @@ class length_largest_substring_equal_0_1{
     public static void main(String [] args){
        Scanner sc = new Scanner(System.in);
        String s = sc.nextLine();
-       int T[] = new int[s.length()*2];
+       int T[] = new int[s.length()*2+1];
        Arrays.fill(T,-1);
        int c = s.length(),max=0;
        for(int i=0;i<s.length();i++){
          if(s.charAt(i)=='1') c++;
          else c--;
          if(T[c]<0 && c==s.length()) T[c]=-1;
-         else T[c]=i;
+         else if(T[c]<0) T[c]=i;
          max = Math.max(max,i-T[c]);
          
        }
