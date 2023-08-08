@@ -13,9 +13,8 @@ class noofdensestrings{
         System.out.print(Arrays.toString(A));
         int n = s.length();
         int temp=CIP(A,0,n-1);
-        // System.out.print(temp);
-        System.out.print((n*(n+1)/2)-temp);
-        // System.out.print(CIP(A,0,n-1));
+        System.out.print(temp);
+        System.out.print((n*(n-1)/2)-temp);
     }
     private static int CIP(int A[], int l, int r){
         int count=0;
