@@ -3,18 +3,20 @@ class noofdensestrings{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        int A[] = new int[s.length()];
+        int A[] = new int[s.length()+1];
+        Arrays.fill(A,-1);
         int count=0;
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)=='1') count++;
             else count--;
-            A[i]=count;
+            A[i+1]=count;
         }
+        A[0]=0;
         System.out.print(Arrays.toString(A));
         int n = s.length();
-        int temp=CIP(A,0,n-1);
-        System.out.print(temp);
-        System.out.print((n*(n-1))/2-temp);
+        int temp=CIP(A,0,n);
+        // System.out.print(temp);
+        System.out.print((n*(n+1))/2-temp);
     }
     private static int CIP(int A[], int l, int r){
         int count=0;
@@ -32,10 +34,10 @@ class noofdensestrings{
         int right[] = Arrays.copyOfRange(A,mid+1,high+1);
         int i=0,j=0,k=low,swaps=0;
         while(i<left.length && j<right.length){
-            if(left[i]<=right[j]){
+            if(left[i]<right[j]){
                 A[k++]=left[i++];
             }else{
-                swaps+=(mid+1)-(low+i);
+                swaps+=(mid+1)-(i);
                 A[k++]=right[j++];
             }
         }
