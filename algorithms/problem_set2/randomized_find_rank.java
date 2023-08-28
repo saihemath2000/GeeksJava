@@ -9,6 +9,7 @@ class randomized_find_rank{
         for(int i=0;i<arr.length;i++) arr[i]=sc.nextInt();
         int l=0,r=n-1;
         System.out.print(arr[FindRank(arr,l,r,rank)]);
+        System.out.print(Arrays.toString(arr));
     }
     private static int FindRank(int arr[],int l, int r, int rank){
         int k=partition(arr,l,r);
